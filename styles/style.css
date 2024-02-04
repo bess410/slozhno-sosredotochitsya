@@ -3,3 +3,91 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: start;
+  margin: 0 auto;
+  max-inline-size: 1024px;
+  min-block-size: 768px;
+  border: 1px solid black;
+}
+
+.decorated-zone {
+  background-image: url(../images/cover-image-light.png);
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  display: block;
+  inset-inline-end: 20px;
+  inset-block-start: 20px;
+  
+  block-size: 25px;
+  border-inline-end: 1px solid var(--main-font-color);
+  border-block-start: 1px solid var(--main-font-color);
+  inline-size: 25px;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  display: block;
+  inset-inline-start: 20px;
+  inset-block-end: 20px;
+  
+  block-size: 25px;
+  border-inline-start: 1px solid var(--main-font-color);
+  border-block-end: 1px solid var(--main-font-color);
+  inline-size: 25px;
+}
+
+.header__theme-menu {
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: lowercase;
+  justify-self: center;
+  margin-block-start: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background-color: transparent;
+  padding: 0 13px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--main-font-color);
+}
+
+.header__logo {
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: #FFC2E6;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: bold;
+  line-height: 82.5%;
+}
+
+.header__title {
+  width: calc(50% - 20px);
+  margin-inline-end: 20px;
+  margin-block-end: 20px;
+  justify-self: end;
+  align-self: center;
+  color: var(--main-font-color);
+  font-family: 'IBM Plex Mono', sans-serif;
+  background-color: #FF8DCB;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+}
