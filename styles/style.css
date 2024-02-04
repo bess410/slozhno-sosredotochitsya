@@ -12,11 +12,12 @@
   margin: 0 auto;
   max-inline-size: 1024px;
   min-block-size: 768px;
-  border: 1px solid black;
 }
 
 .decorated-zone {
   background-image: url(../images/cover-image-light.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .header::before {
@@ -62,7 +63,7 @@
 .header__theme-menu-button {
   border: none;
   background-color: transparent;
-  padding: 0 13px;
+  padding: 1.5px 13px;
 }
 
 .header__theme-menu-button_active {
@@ -90,4 +91,28 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
+}
+
+@media (width <= 768px) {
+  :root {
+    --accent-color: #FF8DCB;
+  }
+  
+  .header {
+    min-block-size: 1024px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .header__theme-menu {
+    justify-self: end;
+    align-self: center;
+    margin-inline-end: 20px;
+  }
+
+  .header__logo {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
 }
