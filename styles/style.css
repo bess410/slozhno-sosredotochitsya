@@ -78,7 +78,7 @@
 }
 
 .header__title {
-  width: calc(50% - var(--header-padding));
+  width: max(50% - var(--header-padding), 375px - 2 * var(--header-padding));
   margin-inline-end: var(--header-padding);
   margin-block-end: var(--header-padding);
   justify-self: end;
@@ -106,7 +106,6 @@
   }
 
   .header__title {
-    width: clamp(22.1875rem, 21.6508rem + 2.2901vw, 22.75rem);
     margin-inline-start: var(--header-padding);
   }
   
