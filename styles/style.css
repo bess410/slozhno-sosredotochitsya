@@ -85,9 +85,12 @@
   align-self: center;
   color: var(--main-font-color);
   font-family: 'IBM Plex Mono', sans-serif;
-  background-color: #ff8dcb;
   font-weight: 700;
   line-height: 23.4px;
+}
+
+.title-decor {
+  background-color: #ff8dcb;
 }
 
 @media (width <= 768px) {
