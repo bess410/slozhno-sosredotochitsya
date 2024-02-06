@@ -6,6 +6,7 @@
   --article-header-color: #FF0070;
   --decorated-color: #FF0070;
   --button-color: #FF0070;
+  --button-color-hover: rgba(255, 0, 112, 40%);
 }
 
 .page.theme_dark {
@@ -42,6 +43,7 @@
     --article-header-color: #FF0070;
     --decorated-color: #FF0070;
     --button-color: #FF0070;
+    --button-color-hover: rgba(255, 0, 112, 40%);
   }
 
   .page {

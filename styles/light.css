@@ -6,6 +6,7 @@
   --title-color: #353430;
   --decorated-color: #353430;
   --button-color: #353430;
+  --button-color-hover: rgba(50, 49, 45, 40%);
 }
 
 .page.theme_light {

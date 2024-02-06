@@ -68,7 +68,17 @@
   padding: 1.5px 13px;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-color-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--button-color);
+}
+
 .header__theme-menu-button_active {
+  pointer-events: none;
   outline: 1px solid var(--button-color);
 }
 
@@ -105,6 +115,10 @@
 a {
   text-decoration: none;
   text-shadow: 2px 2px 0px var(--decor-title-color); 
+}
+
+a:hover {
+  border-block-end: 1px solid black;
 }
 
 .section {
