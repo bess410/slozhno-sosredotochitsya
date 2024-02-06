@@ -102,6 +102,11 @@
   gap: 5rem;
 }
 
+a {
+  text-decoration: none;
+  text-shadow: 2px 2px 0px var(--decor-title-color); 
+}
+
 .section {
   padding: 0 var(--main-padding);
   display: grid;
