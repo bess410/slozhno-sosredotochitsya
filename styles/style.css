@@ -114,7 +114,7 @@
 
 a {
   text-decoration: none;
-  text-shadow: 2px 2px 0px var(--decor-title-color); 
+  text-shadow: 2px 2px 0 var(--decor-title-color);
 }
 
 a:hover {
@@ -144,15 +144,11 @@ a:hover {
 
 .second-section__header {
   grid-column: 1/-1;
-  width: calc((100vw - 2 * var(--main-padding) - 2 * 1.25rem)/3 );
+  width: calc((100vw - 2 * var(--main-padding) - 2 * 1.25rem) / 3);
 }
 
 .third-section__article {
   grid-column: 2/-1;
-}
-
-.third-section__list-header {
-  font-weight: normal;
 }
 
 .third-section__article-header {
@@ -160,6 +156,7 @@ a:hover {
 }
 
 .third-section__list-header {
+  font-weight: normal;
   margin-block-end: 0.625rem;
 }
 
@@ -201,7 +198,7 @@ a:hover {
   grid-row: 4/5;
 }
 
-.fourth-section img{
+.fourth-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -225,6 +222,7 @@ a:hover {
 }
 
 @media (width < 1024px) {
+
   .header {
     min-block-size: clamp(41.75rem, 20.5191rem + 90.5852vw, 64rem);
     margin-block-end: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
@@ -248,7 +246,7 @@ a:hover {
   .first-section {
     grid-template-columns: 1fr 2fr;
   }
-  
+
   .third-section {
     grid-template-columns: 1fr 2fr;
   }
@@ -258,8 +256,8 @@ a:hover {
   }
 
   .fourth-section {
-    grid-template-rows: 
-      auto 
+    grid-template-rows:
+      auto
       clamp(12rem, -0.75rem + 26.5625vw, 16.25rem)
       clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem)
       clamp(19.875rem, -0.75rem + 42.9688vw, 26.75rem);
@@ -267,6 +265,7 @@ a:hover {
 }
 
 @media (width < 768px) {
+
   :root {
     --accent-color: #ff8dcb;
     --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
@@ -316,27 +315,27 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
   }
-  
+
   .first-image {
     grid-column: 1/-1;
     grid-row: 2/3;
   }
-  
+
   .second-image {
     grid-column: 1/-1;
     grid-row: 3/4;
   }
-  
+
   .third-image {
     grid-column: 1/-1;
     grid-row: 4/5;
   }
-  
+
   .fourth-image {
     grid-column: 1/-1;
     grid-row: 5/6;
   }
-  
+
   .fifth-image {
     grid-column: 1/-1;
     grid-row: 6/7;
