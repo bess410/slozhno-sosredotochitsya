@@ -119,7 +119,12 @@ a {
 }
 
 a:hover {
-  border-block-end: 1px solid black;
+  outline: none;
+  border-block-end: 1px solid var(--main-font-color);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--main-font-color);
 }
 
 .section {
