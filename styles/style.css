@@ -274,6 +274,7 @@ a:focus-visible {
 }
 
 @media (width < 768px) {
+
   :root {
     --accent-color: #ff8dcb;
     --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
