@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  color: var(--main-font-color);
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   line-height: 23.4px;
@@ -8,6 +9,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.dark-theme-decor {
+  display: none;
 }
 
 .header {
@@ -27,8 +32,8 @@
   inset-inline-end: var(--main-padding);
   inset-block-start: var(--main-padding);
   block-size: 25px;
-  border-inline-end: 1px solid var(--main-font-color);
-  border-block-start: 1px solid var(--main-font-color);
+  border-inline-end: 1px solid var(--decorated-color);
+  border-block-start: 1px solid var(--decorated-color);
   inline-size: 25px;
 }
 
@@ -39,8 +44,8 @@
   inset-inline-start: var(--main-padding);
   inset-block-end: var(--main-padding);
   block-size: 25px;
-  border-inline-start: 1px solid var(--main-font-color);
-  border-block-end: 1px solid var(--main-font-color);
+  border-inline-start: 1px solid var(--decorated-color);
+  border-block-end: 1px solid var(--decorated-color);
   inline-size: 25px;
 }
 
@@ -57,18 +62,19 @@
 }
 
 .header__theme-menu-button {
+  color: var(--button-color);
   border: none;
   background-color: transparent;
   padding: 1.5px 13px;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--main-font-color);
+  outline: 1px solid var(--button-color);
 }
 
 .header__logo {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: #ffc2e6;
+  color: var(--main-logo-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: bold;
   line-height: 82.5%;
@@ -86,7 +92,8 @@
 }
 
 .title-decor {
-  background-color: #ff8dcb;
+  background-color: var(--decor-title-color);
+  color: var(--title-color);
 }
 
 .main {
@@ -107,6 +114,7 @@
 }
 
 .section-header {
+  color: var(--article-header-color);
   font-size: inherit;
 }
 
@@ -145,6 +153,7 @@
 }
 
 .fourth-section__header {
+  color: var(--title-color);
   grid-column: 1/-1;
 }
 
@@ -190,7 +199,7 @@
 .footer__logo {
   font-family: inherit;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: #ffc2e6;
+  color: var(--main-logo-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   font-weight: bold;
   line-height: 82.5%;
