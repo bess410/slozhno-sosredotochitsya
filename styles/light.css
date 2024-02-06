@@ -10,6 +10,12 @@
   --button-color-hover: rgb(50 49 45 / 0.4);
 }
 
+@media (width < 768px) {
+  :root .theme_light{
+    --accent-color: #ff8dcb;
+  }
+}
+
 .page.theme_light {
   background-image: url(../images/cover-image-light.png);
 }
@@ -26,5 +32,5 @@
 
   .dark-theme-decor {
     display: none;
-  }
+  }  
 }
