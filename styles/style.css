@@ -5,6 +5,7 @@
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   line-height: 23.4px;
+  background-color: var(--main-color);
   background-image: url(../images/cover-image.png);
   background-size: cover;
   background-position: center;
